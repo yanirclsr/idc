@@ -6,8 +6,9 @@ import com.amazonaws.auth.BasicAWSCredentials;
 
 public class AwsAuth {
 
-    private String accessKey = "AKIAITU6SFKNITSBQBFQ";
-    private String secretKey = "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";
+    private String accessKey = "";
+
+    private String secretKey = "";
 
     public AWSCredentials get(){
         System.out.println("rgetting AWSCredentials");
