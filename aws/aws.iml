@@ -6,7 +6,9 @@
     </facet>
     <facet type="web" name="Web">
       <configuration>
-        <webroots />
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
+        </webroots>
         <sourceRoots>
           <root url="file://$MODULE_DIR$/src/main/java" />
           <root url="file://$MODULE_DIR$/src/main/resources" />
@@ -73,7 +75,6 @@
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-secretsmanager:1.11.346" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-fms:1.11.346" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-connect:1.11.346" level="project" />
-    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-transcribe:1.11.346" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-autoscalingplans:1.11.346" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-workmail:1.11.346" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-servicediscovery:1.11.346" level="project" />
@@ -82,7 +83,6 @@
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-alexaforbusiness:1.11.346" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-resourcegroups:1.11.346" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-comprehend:1.11.346" level="project" />
-    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-translate:1.11.346" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-sagemaker:1.11.346" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-iotjobsdataplane:1.11.346" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-sagemakerruntime:1.11.346" level="project" />
@@ -187,7 +187,6 @@
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-discovery:1.11.346" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-applicationautoscaling:1.11.346" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-snowball:1.11.346" level="project" />
-    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-polly:1.11.346" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-lightsail:1.11.346" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-stepfunctions:1.11.346" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-health:1.11.346" level="project" />
@@ -229,5 +228,9 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.3.14.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.3.14.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-transcribe:1.11.346" level="project" />
+    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-translate:1.11.364" level="project" />
+    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-polly:1.11.364" level="project" />
+    <orderEntry type="library" name="Maven: javazoom:jlayer:1.0.1" level="project" />
   </component>
 </module>

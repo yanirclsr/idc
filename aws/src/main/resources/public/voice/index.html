@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/libmp3lame.min.js"></script>
+    <script src="js/mp3recorder.js"></script>
+    <script src="js/mp3Worker.js"></script>
+    <script src="js/recorderWorker.js"></script>
+
+</head>
+<body>
+<h1>Insert text to translate</h1>
+<textarea id="input">Congratulations. You have successfully built this working demo of Amazon Polly in Java. Have fun building voice enabled apps with Amazon Polly (that's me!), and always look at the AWS website for tips and tricks on using Amazon Polly and other great services from AWS</textarea>
+<br/>
+<button id="translate" class="btn btn-success">Translate</button>
+
+<audio controls>
+    <!--style="display: none;" id="player"-->
+    <source id="source" src="" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<script src="js/script.js"></script>
+</body>
+</html>
