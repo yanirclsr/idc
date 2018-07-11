@@ -1,10 +1,10 @@
-package actions;
+package com.idc.image.actions;
 
-import entities.PersonImg;
+import com.idc.image.entities.PersonImg;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
-import utils.Rest;
+import com.idc.image.utils.Rest;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +27,9 @@ public class FbiActions {
 //        int total = Integer.parseInt(json.get("total").toString());
         int runs = (int) Math.ceil(717/20);
 
-        for(int a = 0 ; a < runs; a++) {
+        for(int a = 25 ; a < runs; a++) {
+
+            System.out.println("page #" + a);
 
             JSONObject json = rest.GET(url + a);
 //            int items = Integer.parseInt(json.get("total").toString());
@@ -45,12 +47,13 @@ public class FbiActions {
                     String name = uid + "--" + c;
                     String u = imgJSON.get("original").toString();
 //                    personImg.setId(uid);
-//                    personImg.setUrlrls(imgJSON.get("original").toString());
                     if(u.endsWith(".jpg")) {
+                        personImg.setId(name);
+                        personImg.setUrlrls(u);
                         System.out.println(uid + " > " + u);
                         list.add(personImg);
-                        awsActions.uploadToS3(name, u);
                     }
+//                    personImg.setUrlrls(imgJSON.get("original").toString());
                 }
 
             }
@@ -59,6 +62,22 @@ public class FbiActions {
         return list;
 
 
+    }
+
+    public void getFbiImages(){
+        System.out.println(System.getProperty("user.dir"));
+
+        FbiActions fbiActions = new FbiActions();
+
+
+        List<PersonImg> pplList = fbiActions.getAllWanteds();
+
+        AwsActions awsActions = new AwsActions();
+        awsActions.AS3Invoker();
+        for(PersonImg prsn: pplList){
+            if(! prsn.getId().contains("e3e4565e4eeffe4e4177119058ee867d")) awsActions.uploadToS3(prsn.getId(), prsn.getUrlrls());
+
+        }
     }
 
 }

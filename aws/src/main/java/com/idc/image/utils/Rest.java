@@ -1,4 +1,4 @@
-package utils;
+package com.idc.image.utils;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;

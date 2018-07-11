@@ -1,4 +1,4 @@
-package utils;
+package com.idc.image.utils;
 
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.auth.AWSCredentials;
@@ -6,9 +6,9 @@ import com.amazonaws.auth.BasicAWSCredentials;
 
 public class AwsAuth {
 
-    private String accessKey = "";
+    private String accessKey = "AKIAIWQ6UOO3JVWWTFEA";
 
-    private String secretKey = "";
+    private String secretKey = "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";
 
     public AWSCredentials get(){
         System.out.println("rgetting AWSCredentials");

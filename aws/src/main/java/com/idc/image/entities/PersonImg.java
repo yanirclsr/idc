@@ -1,4 +1,4 @@
-package entities;
+package com.idc.image.entities;
 
 public class PersonImg {
 
