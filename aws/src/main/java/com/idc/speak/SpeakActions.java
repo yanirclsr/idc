@@ -33,10 +33,10 @@ public class SpeakActions {
         return "";
     }
 
-    public String translate(String txt, LanguageCode srcLang, LanguageCode targetLang){
+    public String translate(String txt, LanguageCode srcLang, String targetLang){
 
         String sLang = srcLang.toString().split("-")[0];
-        String tLang = targetLang.toString().split("-")[0];
+        String tLang = targetLang.split("-")[0];
 
         AmazonTranslate translate = AmazonTranslateClientBuilder.standard()
                 .withCredentials(new AWSStaticCredentialsProvider(new AwsAuth().get()))
@@ -46,7 +46,7 @@ public class SpeakActions {
         TranslateTextRequest request = new TranslateTextRequest()
                 .withText(txt)
                 .withSourceLanguageCode(sLang.toString())
-                .withTargetLanguageCode(tLang.toString());
+                .withTargetLanguageCode(tLang);
         TranslateTextResult result  = translate.translateText(request);
         String resultTxt = result.getTranslatedText();
         System.out.println(resultTxt);
