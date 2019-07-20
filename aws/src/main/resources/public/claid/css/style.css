@@ -1,0 +1,53 @@
+html,body{
+    background: black;
+}
+
+#sidebar .main-logo{
+    width: 100px;
+    margin-top: 2px;
+}
+
+
+.hd-search-rp .breadcome-heading input{
+    width: 100% !important;
+    color: white !important;
+    font-size: 20px !important;
+}
+
+.hd-search-rp .breadcome-heading a{
+    right: 15px;
+    left: auto;
+}
+
+
+div.section-admin{
+    margin-top: 15px;
+}
+
+div.product-sales-area, div.product-sales-chart{
+    height: 400px !important;
+}
+
+#map {
+    position:relative;
+    /*top:0;*/
+    /*bottom:0;*/
+    width: 100%;
+    height: 300px;
+}
+
+b,strong{
+    font-weight: 200 !important;
+}
+
+.sidebar-nav .metismenu{
+    background: #383838;
+}
+
+.hd-search-rp .breadcome-heading input{
+    background: white;
+}
+
+ul.metismenu li.current{
+    background: #1b2a47;
+}
